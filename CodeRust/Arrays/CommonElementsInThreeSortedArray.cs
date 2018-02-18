@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace CodeRust.Arrays
 {
+    // https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/
     public class CommonElementsInThreeSortedArray
     {
         public static int[] GetCommonElements(int[] array1, int[] array2, int[] array3)

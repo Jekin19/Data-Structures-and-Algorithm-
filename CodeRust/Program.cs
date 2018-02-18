@@ -32,6 +32,16 @@ namespace CodeRust
             int[] array3 = { 3, 4, 15, 20, 30, 70, 80, 120 };
             PrintArray("Common elements in sorted Array", new []{array1, array2, array3}, CommonElementsInThreeSortedArray.GetCommonElements(array1,array2,array3));      
 
+
+            //Rotated Array
+            input = new int[]{ 1, 3, 7, 9, 10, 15, 20 };
+            int[] input2 = new int[] { 1, 3, 7, 9, 10, 15, 20 };
+            PrintArray("Rotate Array", input, RotateArray.GetRotateArray(input2, 3), "Pivot = 3");
+
+            //First and Last Index 
+            input = new int[] { 1, 3, 5, 5, 5, 5, 7, 123, 125 };
+            PrintArray("First and Last Index for input", input, FirstAndLast.FindFirstAndLast(input, 7), "Input = 7");
+
             Console.ReadKey();
         }
 
