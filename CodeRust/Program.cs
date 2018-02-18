@@ -25,7 +25,12 @@ namespace CodeRust
             //Sorted Rotate Array Search
             input = new int[]{ 5, 6, 7, 8, 9, 10, 1, 2, 3 };
             PrintArray("Sorted Rotate Array", input, new[] { SortedRotatedArray.GetElementIndex(input, 3) },"K = 3");
-           
+
+            //Common elements in sorted Array
+            int[] array1 = { 1, 5, 10, 20, 40, 80 };
+            int[] array2 = { 6, 7, 20, 80, 100 };
+            int[] array3 = { 3, 4, 15, 20, 30, 70, 80, 120 };
+            PrintArray("Common elements in sorted Array", new []{array1, array2, array3}, CommonElementsInThreeSortedArray.GetCommonElements(array1,array2,array3));      
 
             Console.ReadKey();
         }
@@ -35,6 +40,43 @@ namespace CodeRust
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine(string.Format("----------- {0} ---------",header));
 
+            stringBuilder.AppendLine(string.Format("Input: [{0}] {1}",GetInput(input),specialInput));
+
+            stringBuilder.AppendLine(GetOuput(output));
+
+            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(stringBuilder);
+        }
+
+        static void PrintArray<T>(string header, IEnumerable<IList<T>> inputs, IList<T> output)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
+
+            stringBuilder.AppendLine("Input: ");
+            stringBuilder.AppendLine(GetInput(inputs));
+
+            stringBuilder.AppendLine(GetOuput(output));
+
+            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(stringBuilder);
+        }
+
+        static string GetOuput<T>(IList<T> output)
+        {
+            //Output
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < output.Count(); i++)
+            {
+                sb.Append(output[i]);
+                sb.Append(", ");
+            }
+            sb.Remove(sb.Length - 2, 2);
+            return string.Format("Output: [{0}]", sb);
+        }
+
+        static string GetInput<T>(IList<T> input)
+        { 
             // input
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < input.Count(); i++)
@@ -43,20 +85,27 @@ namespace CodeRust
                 sb.Append(", ");
             }
             sb.Remove(sb.Length - 2, 2);
-            stringBuilder.AppendLine(string.Format("Input: [{0}] {1}",sb,specialInput));
+            return sb.ToString();
+        }
 
-            //Output
-            sb = new StringBuilder();
-            for (int i = 0; i < output.Count(); i++)
+        static string GetInput<T>(IEnumerable<IList<T>> inputs)
+        {
+            // input
+            StringBuilder stringBuilder = new StringBuilder();
+            int counter = 0;
+            inputs.ToList().ForEach( input =>
             {
-                sb.Append(output[i]);
-                sb.Append(", ");
-            }
-            sb.Remove(sb.Length-2,2);
-            stringBuilder.AppendLine(string.Format("Output: [{0}]", sb));
-
-            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
-            Console.WriteLine(stringBuilder);
+                counter++;
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < input.Count(); i++)
+                {
+                    sb.Append(input[i]);
+                    sb.Append(", ");
+                }
+                sb.Remove(sb.Length - 2, 2);
+                stringBuilder.AppendLine(string.Format("Input {0}: {1}",counter, sb));
+            });
+            return stringBuilder.ToString();
         }
     }
 }
