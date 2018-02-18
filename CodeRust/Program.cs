@@ -42,6 +42,10 @@ namespace CodeRust
             input = new int[] { 1, 3, 5, 5, 5, 5, 7, 123, 125 };
             PrintArray("First and Last Index for input", input, FirstAndLast.FindFirstAndLast(input, 7), "Input = 7");
 
+            //Move Zeros to Left
+            input = new int[] { 1, 2, 3, 0, 0, 0, 4, 5 };
+            input2 = new int[] {1, 2, 3, 0, 0, 0, 4, 5 };
+            PrintArray("Move Zeros to Left", input2, MoveZeroesToLeft.ShiftZeros(input));
             Console.ReadKey();
         }
 
