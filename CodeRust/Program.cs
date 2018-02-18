@@ -46,6 +46,10 @@ namespace CodeRust
             input = new int[] { 1, 2, 3, 0, 0, 0, 4, 5 };
             input2 = new int[] {1, 2, 3, 0, 0, 0, 4, 5 };
             PrintArray("Move Zeros to Left", input2, MoveZeroesToLeft.ShiftZeros(input));
+
+            //Buy Sell max Profit
+            input = new int[] { 10, 22, 5, 75, 65, 80 };
+            PrintArray("Move Zeros to Left", input, BuySellMaxProfit.GetBuySellIndex(input));
             Console.ReadKey();
         }
 
@@ -54,9 +58,9 @@ namespace CodeRust
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine(string.Format("----------- {0} ---------",header));
 
-            stringBuilder.AppendLine(string.Format("Input: [{0}] {1}",GetInput(input),specialInput));
+            stringBuilder.AppendLine(string.Format("{0} {1}",GetInputOuput(input),specialInput));
 
-            stringBuilder.AppendLine(GetOuput(output));
+            stringBuilder.AppendLine(GetInputOuput(output,"Output"));
 
             stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
             Console.WriteLine(stringBuilder);
@@ -68,15 +72,28 @@ namespace CodeRust
             stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
 
             stringBuilder.AppendLine("Input: ");
-            stringBuilder.AppendLine(GetInput(inputs));
+            stringBuilder.AppendLine(GetInputOuputs(inputs));
 
-            stringBuilder.AppendLine(GetOuput(output));
+            stringBuilder.AppendLine(GetInputOuput(output,"Output"));
 
             stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
             Console.WriteLine(stringBuilder);
         }
 
-        static string GetOuput<T>(IList<T> output)
+        static void PrintArray<T>(string header, IList<T> input, IEnumerable<IList<T>> output)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
+
+            stringBuilder.AppendLine(GetInputOuput(input));
+
+            stringBuilder.AppendLine(GetInputOuputs(output,"Output"));
+
+            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(stringBuilder);
+        }
+
+        static string GetInputOuput<T>(IList<T> output, string comment = "Input")
         {
             //Output
             StringBuilder sb = new StringBuilder();
@@ -86,23 +103,10 @@ namespace CodeRust
                 sb.Append(", ");
             }
             sb.Remove(sb.Length - 2, 2);
-            return string.Format("Output: [{0}]", sb);
+            return string.Format("{0}: [{1}]",comment, sb);
         }
 
-        static string GetInput<T>(IList<T> input)
-        { 
-            // input
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < input.Count(); i++)
-            {
-                sb.Append(input[i]);
-                sb.Append(", ");
-            }
-            sb.Remove(sb.Length - 2, 2);
-            return sb.ToString();
-        }
-
-        static string GetInput<T>(IEnumerable<IList<T>> inputs)
+        static string GetInputOuputs<T>(IEnumerable<IList<T>> inputs, string comment= "Input")
         {
             // input
             StringBuilder stringBuilder = new StringBuilder();
@@ -117,7 +121,7 @@ namespace CodeRust
                     sb.Append(", ");
                 }
                 sb.Remove(sb.Length - 2, 2);
-                stringBuilder.AppendLine(string.Format("Input {0}: {1}",counter, sb));
+                stringBuilder.AppendLine(string.Format("{0} {1}: {2}",comment, counter, sb));
             });
             return stringBuilder.ToString();
         }
