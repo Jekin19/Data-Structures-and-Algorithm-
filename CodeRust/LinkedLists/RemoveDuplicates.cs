@@ -8,15 +8,48 @@ namespace CodeRust.LinkedLists
         public static LinkedList<int> RemoveDuplicate(LinkedList<int> linkedList)
         {
             HashSet<int> set = new HashSet<int>();
-            var start = linkedList.First;
-            while(start != null)
+            var current = linkedList.First.Next;
+            while(current != null)
             {
-                if(set.Contains(start.Value))
+                if(set.Contains(current.Value))
                 {
-                    linkedList.Remove(start);
+                    // In Built method
+                     linkedList.Remove(current);
+
                 }
-                set.Add(start.Value);
-                start = start.Next;
+                set.Add(current.Value);
+                current = current.Next;
+
+            }
+
+            return linkedList;
+        }
+
+        public static CustomLinkedList<int> RemoveDuplicate(CustomLinkedList<int> linkedList)
+        {
+            if(linkedList == null || linkedList.Head == null || linkedList.Head.Next == null)
+            {
+                return linkedList;
+            }
+
+            HashSet<int> set = new HashSet<int>();
+            var previous = linkedList.Head;
+            set.Add(previous.Value);
+
+            var current = linkedList.Head.Next;
+            while (current != null)
+            {
+                if (set.Contains(current.Value))
+                {
+                    previous.Next = current.Next;
+                }
+                else
+                { 
+                    set.Add(current.Value);
+                    previous = current;
+                }
+                current = current.Next;
+
             }
 
             return linkedList;
