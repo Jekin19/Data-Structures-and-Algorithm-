@@ -62,6 +62,13 @@ namespace CodeRust
             inputList.Add(new List<int> { 5, 7 });
             inputList.Add(new List<int> { 6, 8 });
             PrintArray("Merging Intervals", inputList, MergeIntervals.Merge(inputList));
+
+            //Quick Sort
+            input = new int[] { 5, 7, 1, 2, 8, 4, 3 };
+            input2 = new int[] { 5, 7, 1, 2, 8, 4, 3 };
+            PrintArray("Quick Sort", input2, QuickSort.Sort(input));
+
+
             Console.ReadKey();
         }
 
