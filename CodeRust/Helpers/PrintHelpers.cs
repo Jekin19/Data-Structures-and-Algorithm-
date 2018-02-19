@@ -8,6 +8,7 @@ namespace CodeRust.Helpers
 {
     public class PrintHelpers
     {
+        #region Custom Link List
         public static void PrintArray<T>(string header, CustomLinkedList<T> input, CustomLinkedList<T> output, string specialInput = null)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -21,21 +22,19 @@ namespace CodeRust.Helpers
             Console.WriteLine(stringBuilder);
         }
 
-        static string GetInputOuput<T>(CustomLinkedList<T> output, string comment = "Input")
+        public static void PrintArray<T>(string header, IEnumerable<CustomLinkedList<T>> inputs, CustomLinkedList<T> output, string specialInput = null)
         {
-            //Output
-            StringBuilder sb = new StringBuilder();
-            var head = output.Head;
-            while (head != null)
-            {
-                sb.Append(head.Value);
-                sb.Append(", ");
-                head = head.Next;
-            }
-            sb.Remove(sb.Length - 2, 2);
-            return string.Format("{0}: [{1}]", comment, sb);
-        }
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
 
+            stringBuilder.AppendLine(string.Format("{0} {1}", GetInputOuputs(inputs), specialInput));
+
+            stringBuilder.AppendLine(GetInputOuput(output, "Output"));
+
+            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(stringBuilder);
+        }
+        #endregion
 
         public static void PrintArray<T>(string header, IList<T> input, IList<T> output, string specialInput = null)
         {
@@ -102,6 +101,43 @@ namespace CodeRust.Helpers
             }
             sb.Remove(sb.Length - 2, 2);
             return string.Format("{0}: [{1}]", comment, sb);
+        }
+
+        static string GetInputOuput<T>(CustomLinkedList<T> output, string comment = "Input")
+        {
+            //Output
+            StringBuilder sb = new StringBuilder();
+            var head = output.Head;
+            while (head != null)
+            {
+                sb.Append(head.Value);
+                sb.Append(", ");
+                head = head.Next;
+            }
+            sb.Remove(sb.Length - 2, 2);
+            return string.Format("{0}: [{1}]", comment, sb);
+        }
+
+        static string GetInputOuputs<T>(IEnumerable<CustomLinkedList<T>> inputs, string comment = "Input")
+        {
+            // input
+            StringBuilder stringBuilder = new StringBuilder();
+            int counter = 0;
+            inputs.ToList().ForEach(input =>
+            {
+                counter++;
+                StringBuilder sb = new StringBuilder();
+                var head = input.Head;
+                while (head != null)
+                {
+                    sb.Append(head.Value);
+                    sb.Append(", ");
+                    head = head.Next;
+                }
+                sb.Remove(sb.Length - 2, 2);
+                stringBuilder.AppendLine(string.Format("{0} {1}: {2}", comment, counter, sb));
+            });
+            return stringBuilder.ToString();
         }
 
         static string GetInputOuputs<T>(IEnumerable<IList<T>> inputs, string comment = "Input")

@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace CodeRust.LinkedLists
 {
-    public class NFromLastNode
+    public class SwapNnodeWithHead
     {
-
-        // Not Possible to test as you can't add same node to 2 linked list...
-        public static LinkedListNode<int> GetNodeBasedOnPosition(LinkedList<int> linkedList, int position)
+        public static LinkedList<int>  SwapBasedOnPosition(LinkedList<int> linkedList, int position)
         {
-           
-            if (linkedList ==null || linkedList.First ==null || position > linkedList.Count)
+
+            if (linkedList == null || linkedList.First == null || position > linkedList.Count)
             {
-                return new LinkedListNode<int>(-1);
+                return linkedList;
             }
 
             var current = linkedList.First;
@@ -23,7 +20,7 @@ namespace CodeRust.LinkedLists
 
             if (current == null)
             {
-                return new LinkedListNode<int>(-1);
+                return linkedList;
             }
 
             var positionNode = linkedList.First;
@@ -34,16 +31,18 @@ namespace CodeRust.LinkedLists
                 positionNode = positionNode.Next;
             }
 
-            return positionNode;
+            var temp = positionNode.Value;
+            positionNode.Value = linkedList.First.Value;
+            linkedList.First.Value = temp;
+
+            return linkedList;
         }
 
-        public static Node<int> GetNodeBasedOnPosition(CustomLinkedList<int> linkedList, int position)
+        public static CustomLinkedList<int> SwapBasedOnPosition(CustomLinkedList<int> linkedList, int position)
         {
-
-
             if (linkedList == null || linkedList.Head == null)
             {
-                return new Node<int>();
+                return linkedList;
             }
 
             var current = linkedList.Head;
@@ -52,9 +51,9 @@ namespace CodeRust.LinkedLists
                 current = current.Next;
             }
 
-            if(current == null)
+            if (current == null)
             {
-                return new Node<int>();
+                return linkedList;
             }
 
             var positionNode = linkedList.Head;
@@ -65,8 +64,11 @@ namespace CodeRust.LinkedLists
                 positionNode = positionNode.Next;
             }
 
+            var temp = positionNode.Value;
+            positionNode.Value = linkedList.Head.Value;
+            linkedList.Head.Value = temp;
 
-            return positionNode;
+            return linkedList;
         }
     }
 }
