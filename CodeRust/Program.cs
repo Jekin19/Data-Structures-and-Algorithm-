@@ -8,7 +8,7 @@ namespace CodeRust
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Arrays
 
@@ -35,7 +35,7 @@ namespace CodeRust
 
             //Rotated Array
             input = new int[]{ 1, 3, 7, 9, 10, 15, 20 };
-            int[] input2 = new int[] { 1, 3, 7, 9, 10, 15, 20 };
+            int[] input2 = { 1, 3, 7, 9, 10, 15, 20 };
             PrintArray("Rotate Array", input, RotateArray.GetRotateArray(input2, 3), "Pivot = 3");
 
             //First and Last Index 
@@ -49,7 +49,19 @@ namespace CodeRust
 
             //Buy Sell max Profit
             input = new int[] { 10, 22, 5, 75, 65, 80 };
-            PrintArray("Move Zeros to Left", input, BuySellMaxProfit.GetBuySellIndex(input));
+            PrintArray("Buy Sell max Profit", input, BuySellMaxProfit.GetBuySellIndex(input));
+
+            //Sum of Two Values
+            input = new int[] { 5, 7, 1, 2, 8, 4, 3};
+            PrintArray("Sum of Two Values", input, SumOfTwoValues.GetPairs(input, 10), "Sum = 10");
+
+            //Merging Intervals
+            List<List<int>> inputList = new List<List<int>>();
+            inputList.Add(new List<int> { 1, 3 });
+            inputList.Add(new List<int> { 2, 4 });
+            inputList.Add(new List<int> { 5, 7 });
+            inputList.Add(new List<int> { 6, 8 });
+            PrintArray("Merging Intervals", inputList, MergeIntervals.Merge(inputList));
             Console.ReadKey();
         }
 
@@ -66,13 +78,13 @@ namespace CodeRust
             Console.WriteLine(stringBuilder);
         }
 
-        static void PrintArray<T>(string header, IEnumerable<IList<T>> inputs, IList<T> output)
+        static void PrintArray<T>(string header, IEnumerable<IList<T>> inputs, IList<T> output, string specialInput = null)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
 
             stringBuilder.AppendLine("Input: ");
-            stringBuilder.AppendLine(GetInputOuputs(inputs));
+            stringBuilder.AppendLine(string.Format("{0} {1}", GetInputOuputs(inputs), specialInput));
 
             stringBuilder.AppendLine(GetInputOuput(output,"Output"));
 
@@ -80,14 +92,28 @@ namespace CodeRust
             Console.WriteLine(stringBuilder);
         }
 
-        static void PrintArray<T>(string header, IList<T> input, IEnumerable<IList<T>> output)
+        static void PrintArray<T>(string header, IList<T> input, IEnumerable<IList<T>> output, string specialInput = null)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
 
-            stringBuilder.AppendLine(GetInputOuput(input));
+            stringBuilder.AppendLine(string.Format("{0} {1}", GetInputOuput(input), specialInput));
 
             stringBuilder.AppendLine(GetInputOuputs(output,"Output"));
+
+            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(stringBuilder);
+        }
+
+        static void PrintArray<T>(string header, IEnumerable<IList<T>> inputs, IEnumerable<IList<T>> output, string specialInput = null)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
+
+            stringBuilder.AppendLine("Input: ");
+            stringBuilder.AppendLine(string.Format("{0} {1}", GetInputOuputs(inputs), specialInput));
+
+            stringBuilder.AppendLine(GetInputOuputs(output, "Output"));
 
             stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
             Console.WriteLine(stringBuilder);
