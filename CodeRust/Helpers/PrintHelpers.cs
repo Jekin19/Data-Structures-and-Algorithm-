@@ -3,11 +3,31 @@ using System.Collections.Generic;
 using System.Text;
 using CodeRust.LinkedLists;
 using System.Linq;
+using CodeRust.BinaryTrees;
 
 namespace CodeRust.Helpers
 {
     public class PrintHelpers
     {
+        public static void PrintBinaryTree<T>(string header, BinaryTreeNode<T> input, Action<BinaryTreeNode<T>> action)
+        {
+            StringBuilder sbInput = new StringBuilder();
+            sbInput.AppendLine(string.Format("----------- {0} ---------", header));
+
+            sbInput.AppendLine("Input: ");
+            Console.WriteLine(sbInput);
+            StringBuilder sbOutput = new StringBuilder();
+            input.Print<T>();
+
+            if(action != null)
+            {
+                action.Invoke(input);
+            }
+            Console.WriteLine();
+            sbOutput.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(sbOutput);
+        }
+
         #region Custom Link List
         public static void PrintArray<T>(string header, CustomLinkedList<T> input, CustomLinkedList<T> output, string specialInput = null)
         {

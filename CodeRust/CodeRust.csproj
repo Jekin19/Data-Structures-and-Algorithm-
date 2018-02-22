@@ -9,5 +9,6 @@
     <Folder Include="Arrays\" />
     <Folder Include="LinkedLists\" />
     <Folder Include="Helpers\" />
+    <Folder Include="BinaryTrees\" />
   </ItemGroup>
 </Project>

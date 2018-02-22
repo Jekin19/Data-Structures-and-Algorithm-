@@ -1,7 +1,7 @@
-﻿using CodeRust.Arrays;
+﻿using CodeRust.Helpers;
 using System.Collections.Generic;
 
-namespace CodeRust.Helpers
+namespace CodeRust.Arrays
 {
     public class ArrayHelpers
     {
