@@ -53,12 +53,17 @@ namespace CodeRust.Arrays
             PrintHelpers.PrintArray("Sum of Two Values", input, SumOfTwoValues.GetPairs(input, 10), "Sum = 10");
 
             //Merging Intervals
-            List<List<int>> inputList = new List<List<int>>();
+            var inputList = new List<List<int>>();
             inputList.Add(new List<int> { 1, 3 });
             inputList.Add(new List<int> { 2, 4 });
             inputList.Add(new List<int> { 5, 7 });
             inputList.Add(new List<int> { 6, 8 });
-            PrintHelpers.PrintArray("Merging Intervals", inputList, MergeIntervals.Merge(inputList));
+            var inputList2 = new List<List<int>>();
+            inputList.Add(new List<int> { 1, 3 });
+            inputList.Add(new List<int> { 2, 4 });
+            inputList.Add(new List<int> { 5, 7 });
+            inputList.Add(new List<int> { 6, 8 });
+            PrintHelpers.PrintArrays("Merging Intervals", inputList2, MergeIntervals.Merge(inputList));
 
             //Quick Sort
             input = new int[] { 5, 7, 1, 2, 8, 4, 3 };

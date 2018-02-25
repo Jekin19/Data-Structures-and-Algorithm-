@@ -10,5 +10,6 @@
     <Folder Include="LinkedLists\" />
     <Folder Include="Helpers\" />
     <Folder Include="BinaryTrees\" />
+    <Folder Include="Matrix\" />
   </ItemGroup>
 </Project>

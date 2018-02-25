@@ -15,13 +15,16 @@ namespace CodeRust
         {
 
             //Arrays
-            //ArrayHelpers.ArrayProblems();
+            ArrayHelpers.ArrayProblems();
 
             //Linked List
-            //LinkedListHelper.LinkedListProblems();
+            LinkedListHelper.LinkedListProblems();
 
             // Binary Tree
             BinaryTreeHelper.BinaryTreeProblems();
+
+            // Matrix
+            Matrix.MatrixHelpers.MatrixProblems();
 
             Console.ReadKey();
         }

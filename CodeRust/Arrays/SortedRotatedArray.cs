@@ -18,7 +18,7 @@ namespace CodeRust.Arrays
                 }
                 if (array[mid] < key)
                 {
-                    if (array[right] >= key)
+                    if (key <= array[right])
                     {
                         left = mid + 1;
                     }
@@ -29,7 +29,7 @@ namespace CodeRust.Arrays
                 }
                 else
                 {
-                    if (array[left] <= key)
+                    if (key >= array[left])
                     {
                         right = mid - 1;
                     }

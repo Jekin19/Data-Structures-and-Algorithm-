@@ -69,6 +69,20 @@ namespace CodeRust.Helpers
             Console.WriteLine(stringBuilder);
         }
 
+        public static void PrintArrays<T>(string header, List<List<T>> inputs, List<List<T>> output, string specialInput = null)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine(string.Format("----------- {0} ---------", header));
+
+            stringBuilder.AppendLine("Input: ");
+            stringBuilder.AppendLine(string.Format("{0} {1}", GetInputOuputs(inputs), specialInput));
+
+            stringBuilder.AppendLine(GetInputOuputs(output, "Output"));
+
+            stringBuilder.AppendLine(string.Format("---------------------------------------------------"));
+            Console.WriteLine(stringBuilder);
+        }
+
         public static void PrintArray<T>(string header, IEnumerable<IList<T>> inputs, IList<T> output, string specialInput = null)
         {
             StringBuilder stringBuilder = new StringBuilder();
