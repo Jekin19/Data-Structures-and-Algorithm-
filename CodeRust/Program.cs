@@ -26,6 +26,9 @@ namespace CodeRust
             // Matrix
             Matrix.MatrixHelpers.MatrixProblems();
 
+            // Math And Stats
+            MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
+
             Console.ReadKey();
         }
 

@@ -11,5 +11,6 @@
     <Folder Include="Helpers\" />
     <Folder Include="BinaryTrees\" />
     <Folder Include="Matrix\" />
+    <Folder Include="MathAndStats\" />
   </ItemGroup>
 </Project>
