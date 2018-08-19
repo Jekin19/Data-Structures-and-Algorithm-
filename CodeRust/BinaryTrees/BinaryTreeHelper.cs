@@ -45,21 +45,23 @@ namespace CodeRust.BinaryTrees
             //Console.WriteLine(TwoBinaryTreesAreIdentical.AreIdenticalRecursive(input, input2).ToString().ToString());
 
             // In Order Successor
-            //var input = BinaryTreeCreator.GetBinaryTree().Root;
+            var input = BinaryTreeCreator.GetBinaryTree2().Root;
             //PrintHelpers.PrintBinaryTree("InOrder Successor:", input, null);
             //Console.WriteLine(InOrderSuccessor.FindInOrderSuccesor(input, 5));
 
             //var input = BinaryTreeCreator.GetBinaryTree().Root;
             //PrintHelpers.PrintBinaryTree("Level Order Traversal:", input, (x) => LevelOrderTraversal.LevelOrder(x));
 
-            var input = BinaryTreeCreator.GetBinarySearchTree().Root;
+            //var input = BinaryTreeCreator.GetBinarySearchTree().Root;
             //PrintHelpers.PrintBinaryTree("Is Binary Search Tree Recursivley:", input, null);
             //Console.WriteLine(BinarySearchTree.IsBinarySearchTreeRecursive(input).ToString());
 
             //PrintHelpers.PrintBinaryTree("Is Binary Search Tree:", input, null);
             //Console.WriteLine(BinarySearchTree.IsBinarySearchTree(input).ToString());
 
-            PrintHelpers.PrintBinaryTree("Convert to doubly linked list:", input, (x) => ConvertToDoublyLinkedList.ToDoublyLinkedList(x));
+            //PrintHelpers.PrintBinaryTree("Convert to doubly linked list:", input, (x) => ConvertToDoublyLinkedList.ToDoublyLinkedList(x));
+
+            PrintHelpers.PrintBinaryTree("Print Tree Perimeter:", input, (x) => TreePerimeter.PrintTreePerimeter(x));
 
         }
     }

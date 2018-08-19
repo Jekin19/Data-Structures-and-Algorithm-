@@ -32,6 +32,9 @@
             btree.Root.Left.Left.Right = new BinaryTreeNode<int>(6);
             btree.Root.Right.Right.Right = new BinaryTreeNode<int>(7);
 
+            btree.Root.Left.Right = new BinaryTreeNode<int>(12);
+            btree.Root.Left.Right.Right = new BinaryTreeNode<int>(112);
+
             //btree.Root.Right.Right.Right.Right = new BinaryTreeNode<int>(8);
             return btree;
         }
