@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/BinaryTrees/TreePerimeter.cs" Line="12" Column="38" />
+      <File FileName="CodeRust/BinaryTrees/LevelOrderTraversal.cs" Line="35" Column="18" />
+      <File FileName="CodeRust/BinaryTrees/ConnectSameLevelNodes.cs" Line="54" Column="56" />
+      <File FileName="CodeRust/BinaryTrees/ConvertToDoublyLinkedList.cs" Line="3" Column="1" />
+      <File FileName="CodeRust/BinaryTrees/BinaryTreeHelper.cs" Line="67" Column="43" />
+      <File FileName="CodeRust/Program.cs" Line="32" Column="1" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
