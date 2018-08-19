@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeRust/BinaryTrees/BinaryTreeHelper.cs">
+    <Files>
+      <File FileName="CodeRust/BinaryTrees/ConvertToDoublyLinkedList.cs" Line="9" Column="46" />
+      <File FileName="CodeRust/BinaryTrees/PreOrderTraversal.cs" Line="29" Column="24" />
+      <File FileName="CodeRust/BinaryTrees/InOrderTraversal.cs" Line="40" Column="10" />
+      <File FileName="CodeRust/BinaryTrees/BinaryTreeHelper.cs" Line="60" Column="86" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CodeRust PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

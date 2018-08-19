@@ -8,7 +8,7 @@ namespace CodeRust.MathAndStats
         public static void MathAndStatsProblems()
         {
            
-            PrintHelpers.PrintArray("All Sum Combination", new[]{5}, AllSumsCombination.GetAllCombinations(5));
+            //PrintHelpers.PrintArray("All Sum Combination", new[]{5}, AllSumsCombination.GetAllCombinations(5));
         }
     }
 }

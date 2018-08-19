@@ -5,52 +5,41 @@ namespace CodeRust.BinaryTrees
 {
     public class TwoBinaryTreesAreIdentical
     {
-        public static void AreIdentical<T>(BinaryTreeNode<T> root1, BinaryTreeNode<T> root2)
+        public static bool AreIdentical<T>(BinaryTreeNode<T> rootFirst, BinaryTreeNode<T> rootSecond)
         {
-            if (root1 == null || root2 == null)
-            { 
-                Console.WriteLine("False");
-                return;
+            if(rootFirst == null || rootSecond == null) {
+                return false;
             }
-
             Queue<BinaryTreeNode<T>> queue = new Queue<BinaryTreeNode<T>>();
-            queue.Enqueue(root1);
-            queue.Enqueue(root2);
+            queue.Enqueue(rootFirst);
+            queue.Enqueue(rootSecond);
 
-            while(queue.Count> 0)
-            {
-                var currentRoot1 = queue.Dequeue();
-                var currentRoot2 = queue.Dequeue();
-                if(!currentRoot1.Value.Equals(currentRoot2.Value))
-                {
-                    Console.WriteLine("False");
-                    return;
-                }
+            while(queue.Count> 0) {
+                var root1 = queue.Dequeue();
+                var root2 = queue.Dequeue();
 
-                if (currentRoot1.Right != null && currentRoot2.Right != null)
-                {
-                    queue.Enqueue(currentRoot1.Right);
-                    queue.Enqueue(currentRoot2.Right);
+                if(!root1.Value.Equals(root2.Value)) {
+                    return false; 
+                }    
+                if(root1.Left != null && root2.Left != null) {
+                    queue.Enqueue(root1.Left);
+                    queue.Enqueue(root2.Left);
                 }
-                else if (currentRoot1.Right == null && currentRoot2.Right != null || currentRoot1.Right != null && currentRoot2.Right == null)
+                if (root1.Right != null && root2.Right != null)
                 {
-                    Console.WriteLine("False");
-                    return;
+                    queue.Enqueue(root1.Right);
+                    queue.Enqueue(root2.Right);
                 }
-
-                if (currentRoot1.Left != null && currentRoot2.Left != null)
+                if((root1.Left == null && root2.Left != null) || (root1.Left != null && root2.Left == null)) {
+                    return false;
+                }
+                if ((root1.Right == null && root2.Right != null) || (root1.Right != null && root2.Right == null))
                 {
-                    queue.Enqueue(currentRoot1.Left);
-                    queue.Enqueue(currentRoot2.Left);
+                    return false;
                 }
-                else if (currentRoot1.Left == null && currentRoot2.Left != null || currentRoot1.Left != null && currentRoot2.Left == null)
-                {
-                    Console.WriteLine("False");
-                    return;
-                }
-
             }
-            Console.WriteLine("True");
+
+            return true;
         }
 
         public static bool AreIdenticalRecursive<T>(BinaryTreeNode<T> root1, BinaryTreeNode<T> root2)
