@@ -1,6 +1,10 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
+      <File FileName="CodeRust/MathAndStats/MathAndSumHelpers.cs" Line="68" Column="53" />
+      <File FileName="CodeRust/MathAndStats/PowerOfNumber.cs" Line="24" Column="27" />
+      <File FileName="CodeRust/Program.cs" Line="36" Column="1" />
+      <File FileName="CodeRust/MathAndStats/SquareRootOfNumber.cs" Line="9" Column="1" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

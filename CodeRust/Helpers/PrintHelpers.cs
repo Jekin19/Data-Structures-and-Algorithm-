@@ -133,7 +133,10 @@ namespace CodeRust.Helpers
                 sb.Append(output[i]);
                 sb.Append(", ");
             }
-            sb.Remove(sb.Length - 2, 2);
+            if (sb.Length> 2) {
+                sb.Remove(sb.Length - 2, 2);
+            }
+           
             return string.Format("{0}: [{1}]", comment, sb);
         }
 
@@ -179,7 +182,7 @@ namespace CodeRust.Helpers
             // input
             StringBuilder stringBuilder = new StringBuilder();
             int counter = 0;
-            inputs.ToList().ForEach(input =>
+            inputs?.ToList().ForEach(input =>
             {
                 counter++;
                 StringBuilder sb = new StringBuilder();
@@ -188,7 +191,10 @@ namespace CodeRust.Helpers
                     sb.Append(input[i]);
                     sb.Append(", ");
                 }
-                sb.Remove(sb.Length - 2, 2);
+                if (sb.Length > 2) {
+                    sb.Remove(sb.Length - 2, 2);
+
+                }
                 stringBuilder.AppendLine(string.Format("{0} {1}: {2}", comment, counter, sb));
             });
             return stringBuilder.ToString();

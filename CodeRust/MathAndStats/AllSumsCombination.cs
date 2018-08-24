@@ -4,7 +4,7 @@ namespace CodeRust.MathAndStats
 {
     public class AllSumsCombination
     {
-        public static IEnumerable<IEnumerable<int>> GetAllCombinations(int target)
+        public static List<List<int>> GetAllCombinations(int target)
         {
             List<List<int>> result = new List<List<int>>();
 
