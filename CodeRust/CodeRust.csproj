@@ -12,5 +12,6 @@
     <Folder Include="BinaryTrees\" />
     <Folder Include="Matrix\" />
     <Folder Include="MathAndStats\" />
+    <Folder Include="StackAndQueues\" />
   </ItemGroup>
 </Project>
