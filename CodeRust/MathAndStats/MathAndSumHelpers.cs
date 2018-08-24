@@ -26,6 +26,16 @@ namespace CodeRust.MathAndStats
             sb = new System.Text.StringBuilder();
             KthPermutation.Find_kth_permutation_rec(input, 7, sb);
             Console.WriteLine("Output: " + sb);
+
+            Console.WriteLine("");
+            Console.WriteLine("Integer Division");
+            Console.WriteLine("Input: ");
+            Console.WriteLine("Dividen: 40; Divisor: 4 ");
+            Console.WriteLine("Output: ");
+            Console.WriteLine(IntegerDivision.IntegerDivisionRec(40, 4));
+
+            var listInput = new List<int> { 4, 6, 8, 1, 3, 5, 10 };
+            PrintHelpers.PrintArray("Pythagoras Triplet", listInput, PythagorasTriplet.GetPythagorasTriplets(listInput));
         }
     }
 }
