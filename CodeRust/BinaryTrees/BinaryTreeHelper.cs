@@ -44,10 +44,10 @@ namespace CodeRust.BinaryTrees
             input2.Print();
             Console.WriteLine(TwoBinaryTreesAreIdentical.AreIdenticalRecursive(input, input2).ToString().ToString());
 
-            //In Order Successor
-            input = BinaryTreeCreator.GetBinaryTree2().Root;
-            PrintHelpers.PrintBinaryTree("InOrder Successor:", input, null);
-            Console.WriteLine(InOrderSuccessor.FindInOrderSuccesor(input, 5));
+            // In Order Successor
+            input = BinaryTreeCreator.GetBinarySearchTree().Root;
+            PrintHelpers.PrintBinaryTree("InOrder Successor of 75", input, x => InOrderSuccessor.FindInOrderSuccesor(x, 75));
+            PrintHelpers.PrintBinaryTree("InOrder Successor Rec of 75", input, x => InOrderSuccessor.FindInOrderSuccesorRec(x, 75, new[]{false}));
 
             input = BinaryTreeCreator.GetBinaryTree().Root;
             PrintHelpers.PrintBinaryTree("Level Order Traversal:", input, (x) => LevelOrderTraversal.LevelOrder(x));
@@ -67,7 +67,17 @@ namespace CodeRust.BinaryTrees
             PrintHelpers.PrintBinaryTree("Connect same level nodes:", input, (x) => ConnectSameLevelNodes.LevelOrder(x));
 
             input = BinaryTreeCreator.GetBinarySearchTree().Root;
-            PrintHelpers.PrintBinaryTree("Nth Highest:", input, (x) => NthHighestInBinaryTree.NthHighest(x, 3, new Count()));
+            PrintHelpers.PrintBinaryTree("Nth Highest:", input, (x) => NthHighestInBinaryTree.NthHighest(x, 3));
+            PrintHelpers.PrintBinaryTree("Nth Highest Rec:", input, (x) => NthHighestInBinaryTree.NthHighestRec(x, 3, new Count()));
+
+            input = BinaryTreeCreator.GetBinaryTree3().Root;
+            PrintHelpers.PrintBinaryTree("Delete Zero Sub Trees:", input, (x) => DeleteZeroSubTrees.DeleteZeroTrees(x));
+
+            input = BinaryTreeCreator.GetBinaryTree().Root;
+            PrintHelpers.PrintBinaryTree("Mirror Binary Tree:", input, (x) => MirrorBinaryTree.Mirror(x));
+            input = BinaryTreeCreator.GetBinaryTree().Root;
+            PrintHelpers.PrintBinaryTree("Mirror Binary Tree Rec:", input, (x) => MirrorBinaryTree.MirrorRec(x));
+
         }
     }
 }

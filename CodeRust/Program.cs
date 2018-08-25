@@ -22,13 +22,13 @@ namespace CodeRust
             //LinkedListHelper.LinkedListProblems();
 
             // Binary Tree
-            //BinaryTreeHelper.BinaryTreeProblems();
+            BinaryTreeHelper.BinaryTreeProblems();
 
             // Matrix
             //Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
-            MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
+            //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
 
             //Stack And Queue
             //StackAndQueueHelper.StackAndQueueProblems();

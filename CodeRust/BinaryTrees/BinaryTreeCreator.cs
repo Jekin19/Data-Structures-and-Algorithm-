@@ -39,7 +39,20 @@
             return btree;
         }
 
-        public static BinaryTree<int> GetBinarySearchTree()
+        public static BinaryTree<int> GetBinaryTree3()
+        {
+            BinaryTree<int> btree = new BinaryTree<int>();
+            btree.Root = new BinaryTreeNode<int>(7);
+            btree.Root.Left = new BinaryTreeNode<int>(5);
+            btree.Root.Right = new BinaryTreeNode<int>(6);
+
+            btree.Root.Left.Left = new BinaryTreeNode<int>(-3);
+            btree.Root.Left.Right = new BinaryTreeNode<int>(-2);
+            return btree;
+        }
+
+
+            public static BinaryTree<int> GetBinarySearchTree()
         {
             BinaryTree<int> btree = new BinaryTree<int>();
             btree.Root = new BinaryTreeNode<int>(100);
