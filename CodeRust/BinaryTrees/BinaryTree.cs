@@ -26,4 +26,30 @@
             }
         }
     }
+
+    public class Tree<T> {
+        Node<T> root;
+
+        public Tree()
+        {
+            root = null;
+        }
+
+        public virtual void Clear()
+        {
+            root = null;
+        }
+
+        public Node<T> Root
+        {
+            get
+            {
+                return root;
+            }
+            set
+            {
+                root = value;
+            }
+        }
+    }
 }

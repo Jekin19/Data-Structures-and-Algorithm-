@@ -1,16 +1,22 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/BinaryTrees/BinaryTreeHelper.cs" Line="47" Column="15" />
-      <File FileName="CodeRust/BinaryTrees/BinaryTreeCreator.cs" Line="63" Column="63" />
-      <File FileName="CodeRust/BinaryTrees/InOrderSuccessor.cs" Line="55" Column="14" />
+      <File FileName="CodeRust/Matrix/MatrixHelpers.cs" Line="22" Column="58" />
+      <File FileName="CodeRust/Matrix/ClosestMeetingPoint.cs" Line="48" Column="1" />
+      <File FileName="CodeRust/Program.cs" Line="36" Column="1" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CodeRust PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="95" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="27" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="22" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/Matrix/ClosestMeetingPoint.cs" relfile="CodeRust/Matrix/ClosestMeetingPoint.cs" line="48" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/Matrix/ClosestMeetingPoint.cs" relfile="CodeRust/Matrix/ClosestMeetingPoint.cs" line="39" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

@@ -52,7 +52,7 @@
         }
 
 
-            public static BinaryTree<int> GetBinarySearchTree()
+        public static BinaryTree<int> GetBinarySearchTree()
         {
             BinaryTree<int> btree = new BinaryTree<int>();
             btree.Root = new BinaryTreeNode<int>(100);
@@ -65,6 +65,32 @@
 
             //btree.Root.Right.Right.Right.Right = new BinaryTreeNode<int>(8);
             return btree;
+        }
+
+        public static BinaryTree<int> GetBinarySearchTreeWithPointers()
+        {
+            BinaryTree<int> btree = new BinaryTree<int>();
+            btree.Root = new BinaryTreeNodeWithAddPointers<int>(100);
+            btree.Root.Left = new BinaryTreeNodeWithAddPointers<int>(50);
+            btree.Root.Right = new BinaryTreeNodeWithAddPointers<int>(150);
+
+            btree.Root.Left.Left = new BinaryTreeNodeWithAddPointers<int>(25);
+            btree.Root.Left.Right = new BinaryTreeNodeWithAddPointers<int>(75);
+
+
+            //btree.Root.Right.Right.Right.Right = new BinaryTreeNode<int>(8);
+            return btree;
+        }
+
+        public static Tree<int> GetTree()
+        {
+            Tree<int> tree = new Tree<int>();
+            tree.Root = new Node<int>(1);
+            var node = new Node<int>(3);
+            node.Neighbors = new NodeList<int> { new Node<int>(5), new Node<int>(6) };
+            tree.Root.Neighbors = new NodeList<int> { new Node<int>(2), node, new Node<int>(4) };
+
+            return tree;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace CodeRust.BinaryTrees
 {
@@ -13,6 +14,19 @@ namespace CodeRust.BinaryTrees
             public int Size { get { return Text.Length; } }
             public int EndPos { get { return StartPos + Size; } set { StartPos = value - Size; } }
             public NodeInfo<T> Parent, Left, Right;
+        }
+
+        public static void Print<T>(this BinaryTreeNodeWithAddPointers<T> root) {
+            StringBuilder sb = new StringBuilder();
+            while(root != null) {
+                sb.Append(root.Value + "=> ");
+                root = (BinaryTreeNodeWithAddPointers<T>)root.Next;
+            }
+            if(sb.Length > 3) {
+                Console.WriteLine(sb.ToString().Substring(0, sb.Length - 3));
+            } else {
+                Console.WriteLine(sb);
+            } 
         }
 
         public static void Print<T>(this BinaryTreeNode<T> root, int topMargin = 2, int leftMargin = 2)

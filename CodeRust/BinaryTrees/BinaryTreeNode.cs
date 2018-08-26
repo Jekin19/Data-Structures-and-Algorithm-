@@ -52,4 +52,37 @@
         }
     }
 
+    public class BinaryTreeNodeWithAddPointers<T> : BinaryTreeNode<T>
+    {
+        public BinaryTreeNodeWithAddPointers(T data)
+        {
+            Value = data;
+            NodeList<T> children = new NodeList<T>(4)
+            {
+                [0] = Left,
+                [1] = Right,
+                [2] = Next
+            };
+            Neighbors = children;
+        }
+
+        public BinaryTreeNode<T> Next
+        {
+            get
+            {
+                if (base.Neighbors == null)
+                    return null;
+                else
+                    return (BinaryTreeNode<T>)base.Neighbors[2];
+            }
+            set
+            {
+                if (base.Neighbors == null)
+                    base.Neighbors = new NodeList<T>(3);
+
+                base.Neighbors[2] = value;
+            }
+        }
+    }
+
 }

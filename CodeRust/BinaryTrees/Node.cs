@@ -5,14 +5,13 @@ namespace CodeRust.BinaryTrees
     {
         // Private member-variables
         private T data;
-        private NodeList<T> neighbors = null;
 
         public Node() { }
-        public Node(T data) : this(data, null) { }
+        public Node(T data) : this(data, new NodeList<T>()) { }
         public Node(T data, NodeList<T> neighbors)
         {
             this.data = data;
-            this.neighbors = neighbors;
+            this.Neighbors = neighbors;
         }
 
         public T Value
@@ -27,17 +26,7 @@ namespace CodeRust.BinaryTrees
             }
         }
 
-        protected NodeList<T> Neighbors
-        {
-            get
-            {
-                return neighbors;
-            }
-            set
-            {
-                neighbors = value;
-            }
-        }
+        public NodeList<T> Neighbors { get; set; } = new NodeList<T>();
     }
 
 }
