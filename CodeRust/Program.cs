@@ -34,7 +34,10 @@ namespace CodeRust
             //StackAndQueueHelper.StackAndQueueProblems();
 
             //Miscellaneous
-            Miscellaneous.LruCacheTester.TestMethod();
+            //Miscellaneous.LruCacheTester.TestMethod();
+
+            //Graphs
+            Graphs.Graph.TestMethod();
 
             Console.ReadKey();
         }

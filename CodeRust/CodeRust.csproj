@@ -14,5 +14,6 @@
     <Folder Include="MathAndStats\" />
     <Folder Include="StackAndQueues\" />
     <Folder Include="Miscellaneous\" />
+    <Folder Include="Graphs\" />
   </ItemGroup>
 </Project>
