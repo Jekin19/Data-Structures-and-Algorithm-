@@ -16,7 +16,7 @@ namespace CodeRust
         {
 
             //Arrays
-            ArrayHelpers.ArrayProblems();
+            //ArrayHelpers.ArrayProblems();
 
             //Linked List
             //LinkedListHelper.LinkedListProblems();
@@ -32,6 +32,9 @@ namespace CodeRust
 
             //Stack And Queue
             //StackAndQueueHelper.StackAndQueueProblems();
+
+            //Miscellaneous
+            Miscellaneous.LruCacheTester.TestMethod();
 
             Console.ReadKey();
         }

@@ -13,5 +13,6 @@
     <Folder Include="Matrix\" />
     <Folder Include="MathAndStats\" />
     <Folder Include="StackAndQueues\" />
+    <Folder Include="Miscellaneous\" />
   </ItemGroup>
 </Project>
