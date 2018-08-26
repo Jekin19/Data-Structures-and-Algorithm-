@@ -14,14 +14,16 @@ namespace CodeRust.Matrix
 
             //PrintHelpers.PrintMatrix("Search in a matrix", input, x => SearchInMatrix.Search(input, 11));
 
-            var points = new List<ClosestMeetingPoint.Point> { new ClosestMeetingPoint.Point(2, 1), new ClosestMeetingPoint.Point(2, 2), new ClosestMeetingPoint.Point(2, 3) };
-            input = new int[5, 5] {     { 0, 0, 0, 0, 0},
-                                        { 0, 0, 0, 0, 0 },
-                                        { 0, 1, 1, 1, 0 },
-                                        { 0, 0, 0, 0, 0 },
-                                        { 0, 0, 0, 0, 0 }
-                };
-            PrintHelpers.PrintMatrix("Closest Meeting Point ", input, x => ClosestMeetingPoint.ClosestMeetingPt(points, 5));
+            //var points = new List<ClosestMeetingPoint.Point> { new ClosestMeetingPoint.Point(2, 1), new ClosestMeetingPoint.Point(2, 2), new ClosestMeetingPoint.Point(2, 3) };
+            //input = new int[5, 5] {     { 0, 0, 0, 0, 0},
+            //                            { 0, 0, 0, 0, 0 },
+            //                            { 0, 1, 1, 1, 0 },
+            //                            { 0, 0, 0, 0, 0 },
+            //                            { 0, 0, 0, 0, 0 }
+            //    };
+            //PrintHelpers.PrintMatrix("Closest Meeting Point ", input, x => ClosestMeetingPoint.ClosestMeetingPt(points, 5));
+
+            PrintHelpers.PrintMatrix("Print Spiral Matrix", input, x => SpiralMatrix.Spiral(input));
         }
     }
 }
