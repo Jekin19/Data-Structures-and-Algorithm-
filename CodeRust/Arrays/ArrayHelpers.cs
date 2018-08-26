@@ -69,6 +69,11 @@ namespace CodeRust.Arrays
             input = new int[] { 5, 7, 1, 2, 8, 4, 3 };
             input2 = new int[] { 5, 7, 1, 2, 8, 4, 3 };
             PrintHelpers.PrintArray("Quick Sort", input2, QuickSort.Sort(input));
+
+            //Sum of Three Values
+            input = new int[] { 5, 7, 1, 2, 8, 4, 3 };
+            input2 = new int[] { 5, 7, 1, 2, 8, 4, 3 };
+            PrintHelpers.PrintArray("Sum of Three Values", input2, SumOfThreeValues.SumOfThreeValue(input, 10));
         }
              
 

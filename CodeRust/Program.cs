@@ -16,7 +16,7 @@ namespace CodeRust
         {
 
             //Arrays
-            //ArrayHelpers.ArrayProblems();
+            ArrayHelpers.ArrayProblems();
 
             //Linked List
             //LinkedListHelper.LinkedListProblems();
@@ -25,7 +25,7 @@ namespace CodeRust
             //BinaryTreeHelper.BinaryTreeProblems();
 
             // Matrix
-            Matrix.MatrixHelpers.MatrixProblems();
+            //Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
             //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();

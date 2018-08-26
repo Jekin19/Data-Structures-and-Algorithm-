@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CodeRust/Helpers/PrintHelpers.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeRust/Arrays/SumOfThreeValues.cs">
     <Files>
       <File FileName="CodeRust/Matrix/MatrixHelpers.cs" Line="26" Column="100" />
       <File FileName="CodeRust/Matrix/ClosestMeetingPoint.cs" Line="48" Column="1" />
       <File FileName="CodeRust/Program.cs" Line="36" Column="1" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
-      <File FileName="CodeRust/Matrix/SpiralMatrix.cs" Line="18" Column="17" />
-      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="39" Column="14" />
+      <File FileName="CodeRust/Matrix/SpiralMatrix.cs" Line="58" Column="1" />
+      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="22" Column="16" />
+      <File FileName="CodeRust/Arrays/SumOfThreeValues.cs" Line="14" Column="43" />
+      <File FileName="CodeRust/Arrays/ArrayHelpers.cs" Line="73" Column="34" />
+      <File FileName="CodeRust/Arrays/QuickSort.cs" Line="4" Column="27" />
+      <File FileName="CodeRust/Arrays/SumOfTwoValues.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CodeRust PreferredExecutionTarget="MonoDevelop.Default" />
