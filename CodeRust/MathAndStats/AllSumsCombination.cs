@@ -6,36 +6,36 @@ namespace CodeRust.MathAndStats
     {
         public static List<List<int>> GetAllCombinations(int target)
         {
-            List<List<int>> result = new List<List<int>>();
-
-            List<int> output = new List<int>();
-            int temp = 0;
-            for (int i = 1; i < target; i++)
-            {
-
-                temp = temp + i;
-
-                while (temp > target && output.Count > 0)
+            var result = new List<List<int>>();
+            if (target <= 0) {
+                return result;
+            }
+           
+            for (int j = 1; j < target; j++) {
+                int temp = 0;
+                Stack<int> stack = new Stack<int>();
+                for (int i = j; i < target; i++)
                 {
-                    var lastCount = output.Count - 1;
-                    temp = temp - output[lastCount];
-                    output.RemoveAt(lastCount);
-                }
-
-                while(temp <= target)
-                {
-                    output.Add(i);
-                    if(temp == target)
+                    while (temp + i > target)
                     {
-                        result.Add(new List<int>(output));
-                        break;
+                        var pop = stack.Pop();
+                        temp = temp - pop;
                     }
-                    temp = temp + i;
+
+                    while (temp + i <= target)
+                    {
+                        temp = temp + i;
+                        stack.Push(i);
+                        if (temp == target)
+                        {
+                            result.Add(new List<int>(stack.ToArray()));
+                        }
+                    }
                 }
-               
+
             }
 
-
+            result.Add(new List<int>{target});
             return result;
         }
     }

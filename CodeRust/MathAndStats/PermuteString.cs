@@ -11,17 +11,17 @@ namespace CodeRust.MathAndStats
             if (string.IsNullOrEmpty(input)) {
                 return result;
             }
-            PermuteStringRec(input, result, 0, input.Length);
+            PermuteStringRec(input, result, 0, input.Length - 1);
             return result;
         }
 
         private static void PermuteStringRec(string input, List<string> result, int currentIndex, int endIndex) {
+            if (input == null) { return; }
             if(currentIndex == endIndex) {
                 result.Add(input);
                 return;
             }
-
-            for (int i = currentIndex; i < endIndex; i++)
+            for (int i = currentIndex; i <= endIndex; i++)
             {
                 input = Swap(input, currentIndex, i);
                 PermuteStringRec(input, result, currentIndex + 1, endIndex);

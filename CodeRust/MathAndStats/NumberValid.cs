@@ -32,29 +32,28 @@ namespace CodeRust.MathAndStats
             return true;
         }
 
-        private static State GetNextState(State currentState, char input) {
-            switch(currentState) {
+        private static State GetNextState(State currentState, char input)
+        {
+            switch (currentState)
+            {
                 case State.Start:
                 case State.Integer:
-                    if (input >= '0' && input <= '9') {
+                    if(input == '.') {
+                        return State.Decimal;
+                    }
+                    if(input >= '0' && input <= '9') {
                         return State.Integer;
-                    } else if (input == '.') {
-                        return State.Decimal;
-                    } else {
-                        return State.Unknown;
                     }
+                    return State.Unknown;
                 case State.Decimal:
-                    if (input >= '0' && input <= '9')
+                     if (input >= '0' && input <= '9')
                     {
                         return State.Decimal;
                     }
-                    else
-                    {
-                        return State.Unknown;
-                    }
+                    return State.Unknown;
                 default: return State.Unknown;
-
             }
+           
         }
     }
     

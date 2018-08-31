@@ -19,17 +19,14 @@ namespace CodeRust.MathAndStats
             for (int i = 0; i < subsets_count; ++i)
             {
                 HashSet<int> set = new HashSet<int>();
-                for (int j = 0; j < v.Count; ++j)
-                {
-                    if (get_bit(i, j) == 1)
-                    {
-                        int x = v[j];
-                        set.Add(x);
+                for (int j = 0; j < v.Count; j++ ) {
+                    if(get_bit(i, j) == 1) {
+                        set.Add(v[j]);
                     }
                 }
-                var arr = new int[set.Count];
+                int[] arr = new int[set.Count];
                 set.CopyTo(arr);
-                sets.Add(new List<int>(arr));
+                sets.Add(new List<int>(set));
             }
             return sets;
         }

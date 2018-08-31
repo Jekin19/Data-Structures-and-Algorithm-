@@ -25,10 +25,10 @@ namespace CodeRust
             //BinaryTreeHelper.BinaryTreeProblems();
 
             // Matrix
-            Matrix.MatrixHelpers.MatrixProblems();
+            //Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
-            //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
+            MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
 
             //Stack And Queue
             //StackAndQueueHelper.StackAndQueueProblems();
