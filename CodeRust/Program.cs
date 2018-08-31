@@ -25,7 +25,7 @@ namespace CodeRust
             //BinaryTreeHelper.BinaryTreeProblems();
 
             // Matrix
-            //Matrix.MatrixHelpers.MatrixProblems();
+            Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
             //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
@@ -37,7 +37,7 @@ namespace CodeRust
             //Miscellaneous.LruCacheTester.TestMethod();
 
             //Graphs
-            Graphs.Graph.TestMethod();
+            //Graphs.Graph.TestMethod();
 
             Console.ReadKey();
         }

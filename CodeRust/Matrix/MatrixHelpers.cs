@@ -1,5 +1,5 @@
 ﻿using CodeRust.Helpers;
-using System.Collections.Generic;
+using System;
 
 namespace CodeRust.Matrix
 {
@@ -23,7 +23,15 @@ namespace CodeRust.Matrix
             //    };
             //PrintHelpers.PrintMatrix("Closest Meeting Point ", input, x => ClosestMeetingPoint.ClosestMeetingPt(points, 5));
 
-            PrintHelpers.PrintMatrix("Print Spiral Matrix", input, x => SpiralMatrix.Spiral(input));
+            //PrintHelpers.PrintMatrix("Print Spiral Matrix", input, x => SpiralMatrix.Spiral(input));
+
+            input = new int[5, 5] {     { 0, 0, 0, 0, 0},
+                                        { 0, 0, 0, 0, 0 },
+                                        { 0, 1, 1, 1, 0 },
+                                        { 0, 0, 0, 0, 0 },
+                                        { 0, 0, 0, 0, 0 }
+                };
+            PrintHelpers.PrintMatrix("Island", input, x => Console.WriteLine(IslandCount.NumIslands(input)));
         }
     }
 }

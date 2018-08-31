@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/Program.cs" Line="40" Column="39" />
-      <File FileName="CodeRust/Graphs/CloneGraph.cs" Line="64" Column="60" />
-      <File FileName="CodeRust/BinaryTrees/Node.cs" Line="10" Column="16" />
-      <File FileName="CodeRust/BinaryTrees/NaryTree.cs" Line="26" Column="22" />
+      <File FileName="CodeRust/Program.cs" Line="41" Column="13" />
+      <File FileName="CodeRust/Matrix/ClosestMeetingPoint.cs" Line="48" Column="1" />
+      <File FileName="CodeRust/Matrix/IslandCount.cs" Line="57" Column="13" />
+      <File FileName="CodeRust/Matrix/MatrixHelpers.cs" Line="25" Column="13" />
+      <File FileName="CodeRust/MathAndStats/MathAndSumHelpers.cs" Line="68" Column="53" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -15,8 +16,6 @@
       <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="95" column="1" />
       <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="27" column="1" />
       <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="22" column="1" />
-      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/Matrix/ClosestMeetingPoint.cs" relfile="CodeRust/Matrix/ClosestMeetingPoint.cs" line="48" column="1" />
-      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/Matrix/ClosestMeetingPoint.cs" relfile="CodeRust/Matrix/ClosestMeetingPoint.cs" line="39" column="1" />
       <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/Graphs/CloneGraph.cs" relfile="CodeRust/Graphs/CloneGraph.cs" line="30" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
