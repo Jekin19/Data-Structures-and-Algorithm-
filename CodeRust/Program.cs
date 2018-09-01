@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using CodeRust.Arrays;
 using System.Text;
 using System.Linq;
@@ -33,7 +33,7 @@ namespace CodeRust
             //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
 
             //Stack And Queue
-            //StackAndQueueHelper.StackAndQueueProblems();
+            StackAndQueueHelper.StackAndQueueProblems();
 
             //Miscellaneous
             //Miscellaneous.LruCacheTester.TestMethod();
@@ -43,9 +43,12 @@ namespace CodeRust
 
             //String
             //StringHelper.StringProblems();
+<<<<<<< HEAD
 
             //Dynamic Programming
             DynamicProgrammingHelper.DynamicProgrammingProblems();
+=======
+>>>>>>> 360aacb... * storage.ide-wal: Stacks
 
             Console.ReadKey();
         }

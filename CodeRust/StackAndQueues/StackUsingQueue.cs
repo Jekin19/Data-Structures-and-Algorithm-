@@ -4,43 +4,31 @@ namespace CodeRust.StackAndQueues
 {
     public class StackUsingQueue<T>
     {
-        public Queue<T> queue1 = new Queue<T>();
-        public Queue<T> queue2 = new Queue<T>();
+        Queue<T> queue1 = new Queue<T>();
+        Queue<T> queue2 = new Queue<T>();
 
-        public int Count {
-            get {
-                return queue1.Count;
-            }
+        public int Count { get { return queue1.Count; }}
+
+        public void Clear() {
+            queue1.Clear();
+        }
+
+        public void Push(T item) {
+            queue1.Enqueue(item);
         }
 
         public T Peek() {
-            if(queue1.Count > 0) {
-                return queue1.Peek();
-            }
-            return default(T);
+            return queue1.Peek();
         }
 
-        public void Clear() {
-            queue1 = new Queue<T>();
-        }
-
-        public void Push(T input) {
-            queue1.Enqueue(input);
-        }
-
-        public T Pop(){
-            var result = default(T);
+        public T Pop() {
             while(queue1.Count > 1) {
                 queue2.Enqueue(queue1.Dequeue());
             }
-            if (queue1.Count > 0) {
-                result = queue1.Dequeue();
-            }
-            while (queue2.Count > 0)
-            {
-                queue1.Enqueue(queue2.Dequeue());
-            }
-
+            var result = queue1.Dequeue();
+            var temp = queue1;
+            queue1 = queue2;
+            queue2 = temp;
             return result;
         }
 
