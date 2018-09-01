@@ -12,9 +12,10 @@
     <Folder Include="BinaryTrees\" />
     <Folder Include="Matrix\" />
     <Folder Include="MathAndStats\" />
-    <Folder Include="StackAndQueues\" />
-    <Folder Include="Miscellaneous\" />
-    <Folder Include="Graphs\" />
-    <Folder Include="String\" />
+    <Folder Include="DynamicProgramming\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Matrix\CoinChange.cs" />
+    <Compile Remove="Matrix\LongestCommonSubstring.cs" />
   </ItemGroup>
 </Project>

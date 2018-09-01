@@ -8,6 +8,7 @@ using CodeRust.Helpers;
 using CodeRust.BinaryTrees;
 using CodeRust.StackAndQueues;
 using CodeRust.String;
+using CodeRust.DynamicProgramming;
 
 namespace CodeRust
 {
@@ -41,7 +42,10 @@ namespace CodeRust
             //Graphs.Graph.TestMethod();
 
             //String
-            StringHelper.StringProblems();
+            //StringHelper.StringProblems();
+
+            //Dynamic Programming
+            DynamicProgrammingHelper.DynamicProgrammingProblems();
 
             Console.ReadKey();
         }
