@@ -15,5 +15,6 @@
     <Folder Include="StackAndQueues\" />
     <Folder Include="Miscellaneous\" />
     <Folder Include="Graphs\" />
+    <Folder Include="String\" />
   </ItemGroup>
 </Project>

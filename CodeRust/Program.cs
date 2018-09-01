@@ -7,6 +7,7 @@ using CodeRust.LinkedLists;
 using CodeRust.Helpers;
 using CodeRust.BinaryTrees;
 using CodeRust.StackAndQueues;
+using CodeRust.String;
 
 namespace CodeRust
 {
@@ -28,7 +29,7 @@ namespace CodeRust
             //Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
-            MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
+            //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
 
             //Stack And Queue
             //StackAndQueueHelper.StackAndQueueProblems();
@@ -38,6 +39,9 @@ namespace CodeRust
 
             //Graphs
             //Graphs.Graph.TestMethod();
+
+            //String
+            StringHelper.StringProblems();
 
             Console.ReadKey();
         }

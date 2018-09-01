@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/MathAndStats/MathAndSumHelpers.cs" Line="69" Column="68" />
-      <File FileName="CodeRust/MathAndStats/PermuteString.cs" Line="24" Column="59" />
-      <File FileName="CodeRust/MathAndStats/AllSubsets.cs" Line="23" Column="36" />
+      <File FileName="CodeRust/String/StringHelper.cs" Line="78" Column="39" />
+      <File FileName="CodeRust/String/AllPalindromSubstrings.cs" Line="19" Column="8" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
