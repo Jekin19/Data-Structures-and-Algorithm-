@@ -85,8 +85,7 @@ namespace CodeRust.StackAndQueues
 
         private static bool IsOperand(char input)
         {
-            double output;
-            return double.TryParse(input.ToString(), out output);
+            return double.TryParse(input.ToString(), out double output);
         }
     }
 }

@@ -20,8 +20,8 @@ namespace CodeRust.Arrays
             PrintHelpers.PrintArray("Maximum Sliding Window", input, ouput, "Window Size = 4");
 
             //Sorted Rotate Array Search
-            input = new int[] { 5, 6, 7, 8, 9, 10, 1, 2, 3 };
-            PrintHelpers.PrintArray("Sorted Rotate Array", input, new[] { SortedRotatedArray.GetElementIndex(input, 3) }, "K = 3");
+            input = new int[] { 4,5,6,7,8 ,1, 2, 3 };
+            PrintHelpers.PrintArray("Sorted Rotate Array", input, new[] { SortedRotatedArray.GetElementIndex(input, 8) }, "K = 8");
 
             //Common elements in sorted Array
             int[] array1 = { 1, 5, 10, 20, 40, 80 };
@@ -69,6 +69,11 @@ namespace CodeRust.Arrays
             input = new int[] { 5, 7, 1, 2, 8, 4, 3 };
             input2 = new int[] { 5, 7, 1, 2, 8, 4, 3 };
             PrintHelpers.PrintArray("Quick Sort", input2, QuickSort.Sort(input));
+
+            //Quick Sort
+            input = new int[] { 5, 7, 1, 2, 8, 4, 3 };
+            input2 = new int[] { 5, 7, 1, 2, 8, 4, 3 };
+            PrintHelpers.PrintArray("Merge Sort", input2, MergeSort.Merge(input));
 
             //Sum of Three Values
             input = new int[] { 5, 7, 1, 2, 8, 4, 3 };

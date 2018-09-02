@@ -1,29 +1,17 @@
-<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CodeRust Status">
+﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-<<<<<<< HEAD
-      <File FileName="CodeRust/Program.cs" Line="11" Column="35" />
-      <File FileName="CodeRust/DynamicProgramming/LevenshteinDistance.cs" Line="38" Column="18" />
-      <File FileName="CodeRust/DynamicProgramming/Fibonacci.cs" Line="14" Column="14" />
-      <File FileName="CodeRust/DynamicProgramming/DynamicProgrammingHelper.cs" Line="113" Column="13" />
-      <File FileName="CodeRust Status" />
-=======
-      <File FileName="CodeRust/String/StringHelper.cs" Line="78" Column="39" />
-      <File FileName="CodeRust/StackAndQueues/StackAndQueueHelper.cs" Line="22" Column="32" />
-      <File FileName="CodeRust/StackAndQueues/StackUsingQueue.cs" Line="13" Column="28" />
-      <File FileName="CodeRust/Program.cs" Line="35" Column="13" />
-      <File FileName="CodeRust/StackAndQueues/ExpressionEvaluation.cs" Line="22" Column="40" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
->>>>>>> 360aacb... * storage.ide-wal: Stacks
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CodeRust PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Jekin/Projects/CodeRust/CodeRust/Arrays/MaximumSlidingWindow.cs" relfile="CodeRust/Arrays/MaximumSlidingWindow.cs" line="61" column="1" />
-      <Breakpoint file="/Users/Jekin/Projects/CodeRust/CodeRust/Program.cs" relfile="CodeRust/Program.cs" line="54" column="1" />
-      <Breakpoint file="/Users/Jekin/Projects/CodeRust/CodeRust/MathAndStats/MathAndSumHelpers.cs" relfile="CodeRust/MathAndStats/MathAndSumHelpers.cs" line="11" column="70" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="95" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="27" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/BinaryTrees/NaryTree.cs" relfile="CodeRust/BinaryTrees/NaryTree.cs" line="22" column="1" />
+      <Breakpoint file="/Users/jekin/Documents/GitHub/Data-Structures-and-Algorithm-/CodeRust/Graphs/CloneGraph.cs" relfile="CodeRust/Graphs/CloneGraph.cs" line="30" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -8,37 +8,32 @@ namespace CodeRust.Arrays
         public static int[] GetMaximumElementPerWindow(int[] input, int window)
         {
             List<int> result = new List<int>();
-            LinkedList<int> queue = new LinkedList<int>();
-            int i = 0;
-            for (i = 0; i < window; ++i)
-            {
-               
-                while (queue.Count > 0 && input[i] >= input[queue.Last.Value])
-                {
-                    queue.RemoveLast();
+            if (input == null || input.Length < 1 || window < 1) { return result.ToArray(); }
+
+            LinkedList<int> linkedList = new LinkedList<int>();
+            for (int i = 0; i < window; i++) {
+                while(linkedList.Count > 0 && input[linkedList.Last.Value] <= input[i]){
+                    linkedList.RemoveLast();
                 }
-                queue.AddLast(i);
+                linkedList.AddLast(i);
             }
 
-            for (; i < input.Length; ++i)
-            {
-                result.Add(input[queue.First.Value]);
+            for (int i = window; i < input.Length; i++) {
+                result.Add(input[linkedList.First.Value]);
 
-                // Remove out of window elements
-                while(queue.Count> 0 && queue.First.Value <= i-window )
+                while (linkedList.Count > 0 && linkedList.First.Value <= i - window)
                 {
-                    queue.RemoveFirst();
+                    linkedList.RemoveFirst();
                 }
 
-                //Remove all elements smaller than current
-                while (queue.Count > 0 && input[i] >= input[queue.Last.Value])
+                while (linkedList.Count > 0 && input[linkedList.Last.Value] <= input[i])
                 {
-                    queue.RemoveLast();
+                    linkedList.RemoveLast();
                 }
-
-                queue.AddLast(i);
+                linkedList.AddLast(i);
             }
-            result.Add(input[queue.First.Value]);
+            result.Add(input[linkedList.First.Value]);
+
             return result.ToArray();
         }
     }

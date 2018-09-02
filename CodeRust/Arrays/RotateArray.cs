@@ -6,10 +6,15 @@
 
         public static int[] GetRotateArray(int[] input, int pivot)
         {
-            
+            if (input == null) { return input; }
+            pivot = pivot % input.Length;
+            if (pivot < 0)
+            {
+                pivot = input.Length + pivot;
+            }
+            Rotate(input, 0, input.Length - 1);
             Rotate(input, 0, pivot - 1);
-            Rotate(input, pivot, input.Length-1);
-            Rotate(input, 0, input.Length -1);
+            Rotate(input, pivot, input.Length - 1);
             return input;
         }
 

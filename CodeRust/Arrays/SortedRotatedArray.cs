@@ -7,6 +7,7 @@ namespace CodeRust.Arrays
 
         public static int GetElementIndex(int[] array, int key)
         {
+            if (array == null) { return -1; }
             int left = 0;
             int right = array.Length - 1;
             while (left <= right)
@@ -16,28 +17,24 @@ namespace CodeRust.Arrays
                 {
                     return mid;
                 }
-                if (array[mid] < key)
-                {
-                    if (key <= array[right])
-                    {
+
+                // Is left part sorted
+                if(array[left] <= array[mid]) {
+                    // l <= k < m
+                    if (array[left] <= key && key < array[mid]) {
+                        right = mid - 1;
+                    } else {
                         left = mid + 1;
                     }
-                    else
-                    {
-                        right = mid - 1;
-                    }
-                }
-                else
-                {
-                    if (key >= array[left])
-                    {
-                        right = mid - 1;
-                    }
-                    else
-                    {
+
+                } else {
+                    // m < k <=r
+                    if(array[mid] < key && key <= array[right]) {
                         left = mid + 1;
+                    } else {
+                        right = mid - 1;
                     }
-                
+
                 }
 
             }
