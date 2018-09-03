@@ -1,4 +1,6 @@
 ﻿using System;
+using CodeRust.Helpers;
+
 namespace CodeRust.StackAndQueues
 {
     public class StackAndQueueHelper
@@ -42,6 +44,13 @@ namespace CodeRust.StackAndQueues
             var input = "3+6*5-1/2";
             Console.WriteLine("Input: " + input);
             Console.WriteLine(ExpressionEvaluation.EvaluateExpression(input));
+
+            Console.WriteLine("Word Ladder 2");
+            var wordLadderInput = "start: hit; end: cog; dict: hot, dot, dog, lot, log";
+            Console.WriteLine("Input: " + wordLadderInput);
+            var output = WordLadder.GetAllMinWordLadders("hit", "cog", new System.Collections.Generic.HashSet<string> { "hot","dot","dog","lot","log" });
+            Console.WriteLine(PrintHelpers.GetInputOuputs(output, "Output"));
+                             
         }
     }
 }

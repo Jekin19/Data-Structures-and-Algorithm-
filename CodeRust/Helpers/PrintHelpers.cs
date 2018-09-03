@@ -234,7 +234,7 @@ namespace CodeRust.Helpers
             return stringBuilder.ToString();
         }
 
-        static string GetInputOuputs<T>(IEnumerable<IList<T>> inputs, string comment = "Input")
+        public static string GetInputOuputs<T>(IEnumerable<IList<T>> inputs, string comment = "Input")
         {
             // input
             StringBuilder stringBuilder = new StringBuilder();
