@@ -46,6 +46,25 @@ namespace CodeRust.Matrix
                                                 { '0', '0', '1', 'D' }
                                         };
             PrintHelpers.PrintMatrix("Shortest Distance", charInput, x => ShortestDistanceBetweenTwoPoints.GetShortestDistanceBetweenTwoPoints(charInput));
+
+            var boggleInput = new Char[3, 3] {  {'c', 'a', 't'},
+                                                {'r', 'r', 'e'},
+                                                {'t', 'o', 'n'}
+            };
+            
+            var boggleDict = new HashSet<string>
+            {
+                "art",
+                "cat",
+                "cater",
+                "cartoon",
+                "toon",
+                "moon",
+                "not",
+                "apple",
+                "ton"
+            };
+            PrintHelpers.PrintMatrix("Boggle", boggleInput, x => Boggle.GetAllWords(boggleInput, boggleDict));
         }
     
     }
