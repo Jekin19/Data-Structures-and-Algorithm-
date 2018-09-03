@@ -53,7 +53,6 @@ namespace CodeRust.Matrix
                         if (dict.Contains(current.Word)){
                             if(!result.Contains(current.Word)) {
                                 result.Add(current.Word);
-                                printerOutput.Append(current.Word + ", ");
                             }
 
                         }
@@ -127,6 +126,9 @@ namespace CodeRust.Matrix
             }
 
             string printResult = "";
+            foreach(var res in result) {
+                printerOutput.Append(res + ", ");
+            }
             if(printerOutput.Length > 2) {
                 printResult = printerOutput.ToString().Substring(0, printerOutput.Length - 2);
             }
