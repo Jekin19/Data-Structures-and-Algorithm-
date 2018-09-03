@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using CodeRust.Arrays;
 using System.Text;
 using System.Linq;

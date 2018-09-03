@@ -45,8 +45,12 @@ namespace CodeRust.Arrays
             PrintHelpers.PrintArray("Move Zeros to Left", input2, MoveZeroesToLeft.ShiftZeros(input));
 
             //Buy Sell max Profit
-            input = new int[] { 10, 22, 5, 75, 65, 80 };
+            input = new int[] { 10, 22, 5, 75, 65, 80};
             PrintHelpers.PrintArray("Buy Sell max Profit", input, BuySellMaxProfit.GetBuySellIndex(input));
+
+            //Multiple Buy Sell max Profit
+            input = new int[] { 10, 22, 8, 5, 75, 65, 80 };
+            PrintHelpers.PrintArray("Multiple Buy Sell max Profit", input, BuySellMaxProfit.GetAllBuySellIndex(input));
 
             //Sum of Two Values
             input = new int[] { 5, 7, 1, 2, 8, 4, 3 };

@@ -1,7 +1,18 @@
-﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
+<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
       <File FileName="Data-Structures-and-Algorithm- Status" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeRust/MathAndStats/AllSumsCombination.cs">
+    <Files>
+      <File FileName="CodeRust/Program.cs" Line="11" Column="35" />
+      <File FileName="CodeRust/DynamicProgramming/LevenshteinDistance.cs" Line="38" Column="18" />
+      <File FileName="CodeRust/DynamicProgramming/Fibonacci.cs" Line="14" Column="14" />
+      <File FileName="CodeRust/DynamicProgramming/DynamicProgrammingHelper.cs" Line="113" Column="13" />
+      <File FileName="CodeRust Status" />
+      <File FileName="CodeRust/MathAndStats/AllSumsCombination.cs" Line="1" Column="1" />
+>>>>>>> Stashed changes
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CodeRust PreferredExecutionTarget="MonoDevelop.Default" />

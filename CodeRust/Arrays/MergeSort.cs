@@ -19,31 +19,54 @@ namespace CodeRust.Arrays
             }
         }
 
-        static void DoMerge(int[] array, int low, int mid, int high) {
-            int[] temp = new int[25];
-            int lowEnd = mid - 1;
-            int tempPos = low;
-            int total = high - low + 1;
-            while(low <= lowEnd && mid <= high) {
-                if(array[low] <= array[mid]) {
-                    temp[tempPos++] = array[low++];
-                } else {
-                    temp[tempPos++] = array[mid++];
-                }
-            }
+        static void DoMerge(int[] numbers, int left, int mid, int right)
 
-            while (low <= lowEnd) {
-                temp[tempPos++] = array[low++];
-            }
+        {
 
-            while (mid <= high)
+           
+
+            int i, eol, num, pos;
+
+            eol = (mid - 1);
+
+            pos = left;
+
+            num = (right - left + 1);
+            int[] temp = new int[num];
+
+            while ((left <= eol) && (mid <= right))
+
             {
-                temp[tempPos++] = array[mid++];
+
+                if (numbers[left] <= numbers[mid])
+
+                    temp[pos++] = numbers[left++];
+
+                else
+
+                    temp[pos++] = numbers[mid++];
+
             }
 
-            for (int i = 0; i < total; total++) {
-                array[high] = temp[high];
-                high--;
+
+            while (left <= eol)
+
+                temp[pos++] = numbers[left++];
+
+
+            while (mid <= right)
+
+                temp[pos++] = numbers[mid++];
+
+
+            for (i = 0; i < num; i++)
+
+            {
+
+                numbers[right] = temp[right];
+
+                right--;
+
             }
         }
     }

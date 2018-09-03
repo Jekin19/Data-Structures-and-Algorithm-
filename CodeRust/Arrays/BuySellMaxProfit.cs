@@ -5,38 +5,57 @@ namespace CodeRust.Arrays
 {
     public class BuySellMaxProfit
     {
-        public static IEnumerable<IList<int>> GetBuySellIndex(int[] input)
+        public static IList<int> GetBuySellIndex(int[] input)
         {
-            List<List<int>> results = new List<List<int>>();
-            int max = 0;
-            int min = 0;
-            for (int i = 0; i < input.Length-1; i++)
+            int buy = input[0];
+            int cp = 0;
+            int maxP = 0;
+            List<int> result = new List<int>();
+            for (int i = 1; i < input.Length; i++)
             {
-                
-                if(input[i] < input[i+1])
+                if (input[i] - buy > cp)
                 {
-                    if(input[i+1] < input[max])
+                    cp = input[i] - buy;
+                    if (maxP < cp)
                     {
-                        results.Add(new List<int>{min, max});
+                        maxP = cp;
+                        result = new List<int> { buy, input[i] };
                     }
-                    else
-                    {
-                        max = i + 1;
-                        if(max == input.Length-1)
-                        {
-                            results.Add(new List<int> { min, max });
-                        }
-                    }
+                }
+                else if (input[i] < buy)
+                {
+                    buy = input[i];
+                }
+            }
+            return result;
+        }
+
+        public static IEnumerable<IList<int>> GetAllBuySellIndex(int[] input)
+        {
+            int buy = input[0];
+            int cp = 0;
+            List<List<int>> result = new List<List<int>>();
+            for (int i = 1; i < input.Length; i++)
+            {
+                if (input[i] - buy > cp)
+                {
+                    cp = input[i] - buy;
                 }
                 else
                 {
-                    results.Add(new List<int> { min, max });
-                    min = max = i + 1;
+                    if (cp > 0)
+                    {
+                        result.Add(new List<int> { buy, input[i-1] });
+                        cp = 0;
+                    }
+                    buy = input[i];
                 }
             }
-
-
-            return results;
+            if (cp > 0)
+            {
+                result.Add(new List<int> { buy, input[input.Length-1] });
+            }
+            return result;
         }
     }
 }
