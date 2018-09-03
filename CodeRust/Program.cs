@@ -23,17 +23,17 @@ namespace CodeRust
             //Linked List
             //LinkedListHelper.LinkedListProblems();
 
-            // Binary Tree
+            //Binary Tree
             //BinaryTreeHelper.BinaryTreeProblems();
 
             // Matrix
-            //Matrix.MatrixHelpers.MatrixProblems();
+            Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
             //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
 
             //Stack And Queue
-            StackAndQueueHelper.StackAndQueueProblems();
+            //StackAndQueueHelper.StackAndQueueProblems();
 
             //Miscellaneous
             //Miscellaneous.LruCacheTester.TestMethod();

@@ -1,21 +1,11 @@
-<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
-<<<<<<< Updated upstream
+﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/StackAndQueues/WordLadder.cs" Line="22" Column="62" />
-      <File FileName="CodeRust/StackAndQueues/StackAndQueueHelper.cs" Line="57" Column="1" />
-      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="237" Column="30" />
+      <File FileName="CodeRust/StackAndQueues/StackAndQueueHelper.cs" Line="53" Column="80" />
+      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="43" Column="10" />
+      <File FileName="CodeRust/Matrix/ShortestDistanceBetweenTwoPoints.cs" Line="28" Column="26" />
+      <File FileName="CodeRust/Matrix/MatrixHelpers.cs" Line="42" Column="13" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="CodeRust/MathAndStats/AllSumsCombination.cs">
-    <Files>
-      <File FileName="CodeRust/Program.cs" Line="11" Column="35" />
-      <File FileName="CodeRust/DynamicProgramming/LevenshteinDistance.cs" Line="38" Column="18" />
-      <File FileName="CodeRust/DynamicProgramming/Fibonacci.cs" Line="14" Column="14" />
-      <File FileName="CodeRust/DynamicProgramming/DynamicProgrammingHelper.cs" Line="113" Column="13" />
-      <File FileName="CodeRust Status" />
-      <File FileName="CodeRust/MathAndStats/AllSumsCombination.cs" Line="1" Column="1" />
->>>>>>> Stashed changes
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CodeRust PreferredExecutionTarget="MonoDevelop.Default" />

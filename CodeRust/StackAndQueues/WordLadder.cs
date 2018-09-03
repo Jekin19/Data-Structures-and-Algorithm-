@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CodeRust.StackAndQueues
 {
-    public class WordLadder
+    public static class WordLadder
     {
         public class WordNode
         {
@@ -25,7 +25,7 @@ namespace CodeRust.StackAndQueues
             queue.Enqueue(new WordNode(beginWord, 1, new List<string>()));
             int min = Int32.MaxValue;
             List<List<string>> result = new List<List<string>>();
-             wordDict.Add(endWord);
+            wordDict.Add(endWord);
 
             HashSet<string> visited = new HashSet<string>();
             HashSet<string> unvisited = new HashSet<string>(wordDict);
@@ -39,7 +39,8 @@ namespace CodeRust.StackAndQueues
 
                 if (word.Equals(endWord))
                 {
-                    if(top.numSteps <= min) {
+                    if (top.numSteps <= min)
+                    {
                         result.Add(top.words);
                     }
                     continue;
@@ -68,7 +69,7 @@ namespace CodeRust.StackAndQueues
                         string newWord = new string(arr);
                         if (unvisited.Contains(newWord))
                         {
-                            var wordtemp =  new List<string> (top.words);
+                            var wordtemp = new List<string>(top.words);
                             wordtemp.Add(word);
                             queue.Enqueue(new WordNode(newWord, top.numSteps + 1, wordtemp));
                             visited.Add(newWord);
