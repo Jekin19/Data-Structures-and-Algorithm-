@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/StackAndQueues/StackAndQueueHelper.cs" Line="53" Column="80" />
-      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="43" Column="10" />
-      <File FileName="CodeRust/Matrix/ShortestDistanceBetweenTwoPoints.cs" Line="28" Column="26" />
-      <File FileName="CodeRust/Matrix/MatrixHelpers.cs" Line="42" Column="13" />
+      <File FileName="CodeRust/String/AllPalindromSubstrings.cs" Line="19" Column="8" />
+      <File FileName="CodeRust/String/RemoveDuplicates.cs" Line="9" Column="75" />
+      <File FileName="CodeRust/String/RemoveWhiteSpaces.cs" Line="4" Column="21" />
+      <File FileName="CodeRust/String/StringSegmentation.cs" Line="30" Column="1" />
+      <File FileName="CodeRust/StackAndQueues/StackUsingQueue.cs" Line="1" Column="1" />
+      <File FileName="CodeRust/StackAndQueues/WordLadder.cs" Line="1" Column="1" />
+      <File FileName="CodeRust/StackAndQueues/StackAndQueueHelper.cs" Line="36" Column="51" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

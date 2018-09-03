@@ -46,11 +46,11 @@ namespace CodeRust.StackAndQueues
             Console.WriteLine("Input: " + input);
             Console.WriteLine(ExpressionEvaluation.EvaluateExpression(input));
 
-            //Console.WriteLine("Word Ladder 2");
-            //var wordLadderInput = "start: hit; end: cog; dict: hot, dot, dog, lot, log";
-            //Console.WriteLine("Input: " + wordLadderInput);
-            //var output = WordLadder.GetAllMinWordLadders("hit", "cog", new HashSet<string> { "hot","dot","dog","lot","log" });
-            //Console.WriteLine(PrintHelpers.GetInputOuputs(output, "Output"));
+            Console.WriteLine("Word Ladder 2");
+            var wordLadderInput = "start: hit; end: cog; dict: hot, dot, dog, lot, log";
+            Console.WriteLine("Input: " + wordLadderInput);
+            var output = WordLadder.GetAllMinWordLadders("hit", "cog", new HashSet<string> { "hot","dot","dog","lot","log" });
+            Console.WriteLine(PrintHelpers.GetInputOuputs(output, "Output"));
                              
         }
     }
