@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/Matrix/Boggle.cs" Line="139" Column="1" />
+      <File FileName="CodeRust/Matrix/NQueenProblem.cs" Line="129" Column="40" />
+      <File FileName="CodeRust/Program.cs" Line="1" Column="1" />
+      <File FileName="CodeRust/Matrix/MatrixHelpers.cs" Line="77" Column="1" />
+      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="45" Column="87" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -8,7 +8,7 @@ namespace CodeRust.Matrix
     {
         public static void MatrixProblems()
         {
-            var input = new int[3, 4] { { 2, 4, 9, 13 }, 
+            var input = new int[3, 4] { { 2, 4, 9, 13 },
                                         { 3, 0, 11, 18 },
                                         { 6, 8, 16, 21 } };
             PrintHelpers.PrintMatrix("Make Columns And Rows Zeros", input, x => MakeColumnAndRowZeros.MakeZero(input));
@@ -51,7 +51,7 @@ namespace CodeRust.Matrix
                                                 {'r', 'r', 'e'},
                                                 {'t', 'o', 'n'}
             };
-            
+
             var boggleDict = new HashSet<string>
             {
                 "art",
@@ -65,6 +65,15 @@ namespace CodeRust.Matrix
                 "ton"
             };
             PrintHelpers.PrintMatrix("Boggle", boggleInput, x => Boggle.GetAllWords(boggleInput, boggleDict));
+
+            input = new int[5, 5] {     { 0, 0, 0, 0, 0},
+                                        { 0, 0, 0, 0, 0 },
+                                        { 0, 0, 0, 0, 0 },
+                                        { 0, 0, 0, 0, 0 },
+                                        { 0, 0, 0, 0, 0 }
+                };
+            PrintHelpers.PrintMatrix("N Queen Problem", input, x => NQueenProblem.GetNQueens(input.GetLength(0)));
+           
         }
     
     }
