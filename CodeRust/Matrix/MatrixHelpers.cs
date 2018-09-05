@@ -73,7 +73,13 @@ namespace CodeRust.Matrix
                                         { 0, 0, 0, 0, 0 }
                 };
             PrintHelpers.PrintMatrix("N Queen Problem", input, x => NQueenProblem.GetNQueens(input.GetLength(0)));
-           
+
+            input = new int[3, 4] {     { 2, 4, 9, 13 },
+                                        { 3, 0, 11, 18 },
+                                        { 6, 8, 16, 21 } };
+
+            PrintHelpers.PrintMatrix("Diagonal Matrix", input, x => DiagonaMatrixTraversal.TraverseMatrix(input));
+
         }
     
     }
