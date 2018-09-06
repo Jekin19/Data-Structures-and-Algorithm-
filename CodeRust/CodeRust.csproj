@@ -13,6 +13,7 @@
     <Folder Include="Matrix\" />
     <Folder Include="MathAndStats\" />
     <Folder Include="DynamicProgramming\" />
+    <Folder Include="BackTracking\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Matrix\CoinChange.cs" />

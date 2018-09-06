@@ -80,7 +80,15 @@ namespace CodeRust.Matrix
 
             PrintHelpers.PrintMatrix("Diagonal Matrix", input, x => DiagonaMatrixTraversal.TraverseMatrix(input));
 
+            input = new int[4, 4] {     { 0, 1, 0, 0 },
+                                        { 1, 1, 1, 0 },
+                                        { 0, 1, 0, 0 },
+                                        { 1, 1, 0, 0 }
+                };
+            PrintHelpers.PrintMatrix("Island Perimeter", input, x => IslandPerimeter.GetIslandPerimeter(input));
+
+
         }
-    
+
     }
 }

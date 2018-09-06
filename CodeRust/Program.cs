@@ -9,6 +9,7 @@ using CodeRust.BinaryTrees;
 using CodeRust.StackAndQueues;
 using CodeRust.String;
 using CodeRust.DynamicProgramming;
+using CodeRust.BackTracking;
 
 namespace CodeRust
 {
@@ -27,7 +28,7 @@ namespace CodeRust
             //BinaryTreeHelper.BinaryTreeProblems();
 
             // Matrix
-            Matrix.MatrixHelpers.MatrixProblems();
+            //Matrix.MatrixHelpers.MatrixProblems();
 
             // Math And Stats
             //MathAndStats.MathAndStatsHelpers.MathAndStatsProblems();
@@ -46,6 +47,9 @@ namespace CodeRust
 
             //Dynamic Programming
             //DynamicProgrammingHelper.DynamicProgrammingProblems();
+
+            //BackTracking
+            BackTrackingHelper.BackTrackingProblems();
 
             Console.ReadKey();
         }
