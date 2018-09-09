@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{FAD7039A-09DB-4730-A598-EE04A6EC7BA4}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Data-Structures-and-Algorithm- Status">
     <Files>
-      <File FileName="CodeRust/BackTracking/BackTrackingHelper.cs" Line="1" Column="14" />
-      <File FileName="CodeRust/Helpers/PrintHelpers.cs" Line="112" Column="28" />
-      <File FileName="CodeRust/BackTracking/Parenthesis.cs" Line="56" Column="1" />
-      <File FileName="CodeRust/Arrays/ArrayHelpers.cs" Line="40" Column="107" />
-      <File FileName="CodeRust/Arrays/FirstAndLast.cs" Line="8" Column="29" />
-      <File FileName="CodeRust/DynamicProgramming/DynamicProgrammingHelper.cs" Line="30" Column="35" />
+      <File FileName="CodeRust/BackTracking/Parenthesis.cs" Line="53" Column="45" />
+      <File FileName="CodeRust/StackAndQueues/WordLadder.cs" Line="32" Column="33" />
+      <File FileName="CodeRust/String/StringSegmentation.cs" Line="38" Column="1" />
       <File FileName="CodeRust/Program.cs" Line="54" Column="1" />
+      <File FileName="CodeRust/String/StringHelper.cs" Line="71" Column="57" />
+      <File FileName="CodeRust/EmptyTextFile.txt" Line="16" Column="9" />
       <File FileName="Data-Structures-and-Algorithm- Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -43,13 +43,13 @@ namespace CodeRust
             //Graphs.Graph.TestMethod();
 
             //String
-            //StringHelper.StringProblems();
+            StringHelper.StringProblems();
 
             //Dynamic Programming
             //DynamicProgrammingHelper.DynamicProgrammingProblems();
 
             //BackTracking
-            BackTrackingHelper.BackTrackingProblems();
+            //BackTrackingHelper.BackTrackingProblems();
 
             Console.ReadKey();
         }

@@ -25,5 +25,28 @@ namespace CodeRust.String
             }
             return false;
         }
+
+        public static bool WordBreak(string input, HashSet<string> dict) {
+            if (input == null || dict == null) { return false; }
+
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue(input);
+
+            while(queue.Count > 0) {
+                var current = queue.Dequeue();
+                if(dict.Contains(current)){
+                    return true;
+                }
+                for (int i = 1; i <= current.Length; i++) {
+                    var first = current.Substring(0, i);
+                    if (dict.Contains(first)){
+                        queue.Enqueue(current.Substring(i));
+                    }
+                }
+            }
+            return false;
+        }
+
+
     }
 }

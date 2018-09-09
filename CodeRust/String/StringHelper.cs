@@ -67,19 +67,29 @@ namespace CodeRust.String
             //Console.Write("Output:" + stringSegmentationOutput2);
             //Console.WriteLine("");
 
-            Console.WriteLine("Find All Palindrom Substringd");
-            var palindromInput = "aabbbaa";
-            Console.WriteLine("Input: " + palindromInput);
-            var palindromOutput = AllPalindromSubstrings.FindAllPalindromSubstring(palindromInput);
-            Console.Write("Output: " + palindromOutput);
+            Console.WriteLine("Word Break");
+            var stringSegmentationInput = "goalspecial";
+            var dict = new HashSet<string> { "go", "goal", "goals", "s", "pecial" };
+            Console.WriteLine("Input: " + stringSegmentationInput);
+            Console.WriteLine("Dictionary Input: " + "go" + "goal" + "goals" + "s" + "pecial");
+            var stringSegmentationOutput = StringSegmentation.WordBreak(stringSegmentationInput, dict);
+            Console.Write("Output:" + stringSegmentationOutput);
             Console.WriteLine("");
 
-            Console.WriteLine("Find All Palindrom Substringd");
-            var palindromInput2 = "abc";
-            Console.WriteLine("Input: " + palindromInput2);
-            var palindromOutput2 = AllPalindromSubstrings.FindAllPalindromSubstring(palindromInput2);
-            Console.Write("Output: " + palindromOutput2);
-            Console.WriteLine("");
+
+            //Console.WriteLine("Find All Palindrom Substringd");
+            //var palindromInput = "aabbbaa";
+            //Console.WriteLine("Input: " + palindromInput);
+            //var palindromOutput = AllPalindromSubstrings.FindAllPalindromSubstring(palindromInput);
+            //Console.Write("Output: " + palindromOutput);
+            //Console.WriteLine("");
+
+            //Console.WriteLine("Find All Palindrom Substringd");
+            //var palindromInput2 = "abc";
+            //Console.WriteLine("Input: " + palindromInput2);
+            //var palindromOutput2 = AllPalindromSubstrings.FindAllPalindromSubstring(palindromInput2);
+            //Console.Write("Output: " + palindromOutput2);
+            //Console.WriteLine("");
 
         }
     }
